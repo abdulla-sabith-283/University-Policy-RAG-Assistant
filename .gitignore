@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Environment variables (SECRET - do not commit)
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Chroma vector database (large binary, regenerate via src/vectorstore.py)
+chroma_db/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+*.egg-info/
+.dist/
+.build/
+
+# uv
+uv.lock
+
+# Jupyter
+.ipynb_checkpoints
+
+# Logs
+*.log
