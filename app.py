@@ -1,3 +1,12 @@
+import os
+from pathlib import Path
+
+# Build vector store on first run if missing (for Streamlit Cloud)
+if not Path("./chroma_db").exists():
+    from src.vectorstore import create_vector_store
+    create_vector_store()
+
+
 import streamlit as st
 
 from src.rag import RAGPipeline
